@@ -3,30 +3,30 @@
         "id": "1",
         "first_name": "Ash",
         "last_name": "Ketchum",
-        "email ": "aketchum@weyland-yutani.org "
+        "email": "aketchum@weyland-yutani.org "
     },
     {
         "id": "2",
         "first_name": "Lance",
         "last_name": "Bishop",
-        "email ": "lbishop@weyland-yutani.org "
+        "email": "lbishop@weyland-yutani.org "
     },
     {
         "id": "3",
         "first_name": "Annalee",
         "last_name": "Call",
-        "email ": "acall@weyland-yutani.org "
+        "email": "acall@weyland-yutani.org "
     },
     {
         "id": "4",
         "first_name": "David",
         "last_name": "Eight",
-        "email ": "deight@weyland-yutani.org "
+        "email": "deight@weyland-yutani.org "
     },
     {
         "id": "5",
         "first_name": "Walter",
         "last_name": "One",
-        "email ": "wone@weyland-yutani.org"
+        "email": "wone@weyland-yutani.org"
     }
 ]
