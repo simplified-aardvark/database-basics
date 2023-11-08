@@ -26,25 +26,19 @@ export default function Home( {all_names}) {
             <title>Homepage</title>
         </Head>
   
-        <h1>This is a page</h1>
+        <h1 className='display-4'>This is a page</h1>
 
         <h3>This is a list of people</h3>
 
         <div className='list-group'>
           {all_names.map(
               ({id, first_name, last_name}) => (
-                // <ul key={id}>{first_name} + {last_name}</ul>
-
-                <Link key={id} href={`/people/${id}`} className="list-group-item list-group-item-action">
+                <Link key={id} href={`/people/${id}`} className="list-group-item list-group-item-action list-group-item-info">
                   {first_name} + {last_name}
                 </Link>
               )
-
-
             )
           }
-          
-          
         </div>
       </Layout>
     );

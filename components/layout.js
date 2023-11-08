@@ -4,7 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 export const siteTitle = 'Draft Basic Full-Stack App';
-export const name = "DBFSA"
+export const name = "Draft Basic Full-Stack App"
 
 export default function Layout({ children, home }) {
   return (
