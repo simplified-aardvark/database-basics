@@ -50,15 +50,13 @@ export default function person_page({ item_data, relationship_data, page_title})
             {relationship_data.map(
                     ({id, first_name, last_name}) => (
                         <Link key={id} href={`/people/${id}`} className="list-group-item list-group-item-action list-group-item-info">
-                        {first_name} + {last_name}
+                            {first_name} + {last_name}
                         </Link>
                     )
                 )
             }
             </div>
-
+            <br/>
         </Layout>
     );
   }
-  
-

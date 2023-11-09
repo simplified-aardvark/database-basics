@@ -31,7 +31,7 @@ export default function Home( {all_names}) {
         <h3>This is a list of people</h3>
 
         <div className='list-group'>
-          {all_names.map(
+          {all_names && all_names.map(
               ({id, first_name, last_name}) => (
                 <Link key={id} href={`/people/${id}`} className="list-group-item list-group-item-action list-group-item-info">
                   {first_name} + {last_name}
@@ -40,6 +40,7 @@ export default function Home( {all_names}) {
             )
           }
         </div>
+        <br/>
       </Layout>
     );
   }
