@@ -16,23 +16,25 @@ export async function getStaticProps({ params }) {
     // Fetch necessary data for the blog post using params.id
     const item_data = get_item_data(params.id);
     const relationship_data = get_relationship_data(params.id);
+    const page_title = item_data.first_name + " " + item_data.last_name;
 
     return {
         props: {
             item_data,
-            relationship_data
+            relationship_data,
+            page_title
         },
     };
 }
 
 
-export default function person_page({ item_data, relationship_data}) {
+export default function person_page({ item_data, relationship_data, page_title}) {
     return (
         
 
         <Layout>
             <Head>
-                <title>{item_data.first_name} {item_data.last_name}</title>
+                <title>{page_title}</title>
             </Head>
                
             <h1 className='text-center'>{item_data.first_name} {item_data.last_name}</h1>
