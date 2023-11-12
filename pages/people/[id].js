@@ -56,7 +56,7 @@ export default function person_page({ item_data, relationship_data, page_title})
                 )
             }
             </div>
-            <br/>
+            
         </Layout>
     );
   }
