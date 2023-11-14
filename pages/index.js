@@ -1,16 +1,11 @@
 import Layout from '../components/layout';
 import Head from 'next/head';
 import Link from 'next/link';
-import { get_all_names } from '../lib/data';
+import { get_all_names_sorted } from '../lib/data_firebase.js';
 
 // define a getStaticProps() function - this name is defined by next.js
 export async function getStaticProps() {
-  const all_names = get_all_names();
- 
-  // const list_items = all_names.map((name) =>
-  //   // <li key={name.id}>{name.first_name} {name.last_name} </li>
-  //   <li>{name.id}</li>
-  // );
+  const all_names = await get_all_names_sorted();
   
   return {
     props: { all_names }
