@@ -47,7 +47,7 @@ export default function person_page({ item_data, relationship_data, page_title})
             <hr/>
             <h3>Emergency Contacts:</h3>
 
-            {/* <div className='list-group'>
+            <div className='list-group'>
             {relationship_data.map(
                     ({id, first_name, last_name}) => (
                         <Link key={id} href={`/people/${id}`} className="list-group-item list-group-item-action list-group-item-info">
@@ -56,7 +56,7 @@ export default function person_page({ item_data, relationship_data, page_title})
                     )
                 )
             }
-            </div> */}
+            </div>
             
         </Layout>
     );
